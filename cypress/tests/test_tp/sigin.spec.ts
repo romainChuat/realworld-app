@@ -1,4 +1,4 @@
-describe("create account", function () {
+describe("sigin", function () {
 
     before(function () {
         cy.visit('http://localhost:3000/sign')
@@ -50,8 +50,8 @@ describe("create account", function () {
     //test incorrect length password input
     it("show password error message", function () {
         var passwordInput = cy.get('input[name="password"]');
-        cy.get('input[name="username"]').type("rchuat");
         passwordInput.type("123");
+        cy.get('input[name="username"]').type("rchuat");
         cy.get('[data-test="signin-submit"]').should("have.attr", 'disabled');
         //cy.get('[id="password-helper-text"]').should("contain", 'Password must contain at least 4 characters');
 
