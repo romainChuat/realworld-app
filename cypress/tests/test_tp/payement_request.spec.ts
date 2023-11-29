@@ -23,7 +23,6 @@ describe('Payement & request', () => {
         cy.get('input[name="remember"]').check();
         cy.get('[data-test="signin-submit"]').click();
         cy.get('[data-test="nav-top-new-transaction"]').click();
-
     });
 
 
@@ -92,7 +91,6 @@ describe('Payement & request', () => {
         cy.get('[data-test="nav-personal-tab"]').click();
         cy.get('li :first').should("contain", transactionName);
         cy.get('li :first').should("contain", "+$" + amount);
-
         cy.get('li :first').should("contain", name+" "+lastName+" requested ");
 
     });
