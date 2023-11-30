@@ -104,6 +104,10 @@ describe("create account", function () {
         cy.get('a').contains('Have an account? Sign In').click();
         cy.location('pathname').should('eq', '/signin');
     });
+
+
+
+    /// TODO get started with real world 
 });
 
 
