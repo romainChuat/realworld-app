@@ -139,7 +139,7 @@ describe('Like, comment', () => {
     });
 
 
-    // like + comment depuis les list
+    // TODO like + comment depuis les list
 
 
 });
