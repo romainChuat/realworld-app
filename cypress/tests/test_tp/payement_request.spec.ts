@@ -95,8 +95,6 @@ describe('Payement & request', () => {
 
         cy.get('[data-test^="transaction-description"]').should("contain", transactionName);
         cy.get('[data-test^="transaction-amount-"]').should("contain", "+$"+amount);
-
-
     });
 
     it('Make request amout error message', () => {

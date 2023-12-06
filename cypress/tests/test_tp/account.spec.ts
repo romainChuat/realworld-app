@@ -105,9 +105,6 @@ describe("create account", function () {
         cy.location('pathname').should('eq', '/signin');
     });
 
-
-
-    /// TODO get started with real world 
 });
 
 
