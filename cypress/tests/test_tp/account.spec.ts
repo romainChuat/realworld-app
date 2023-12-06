@@ -80,7 +80,7 @@ describe("create account", function () {
         cy.get('[data-test="signup-confirmPassword"]').should("contain", "Confirm your password");
     }); 
 
-    it("show confirm password length error message", function (){
+    it("show confirm password match error message", function (){
         var confirmPasswordInput = cy.get('input[id="confirmPassword"]');
         var passwordInput = cy.get('input[name="password"]'); 
         passwordInput.type('123456');
